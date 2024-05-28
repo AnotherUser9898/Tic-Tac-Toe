@@ -1,0 +1,164 @@
+:root {
+        --box-color: #9e3900;
+        --background: #b41f1f;
+        --box-background-color: #d8aa89;
+        --player-score-color: #ec6408;
+}
+
+body {
+        height: 100vh;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-rows: min-content auto;
+        background-color: var(--background);
+}
+
+
+.container {
+        display: grid;
+        grid-template: repeat(3,min-content) / repeat(3,min-content);
+        justify-content: center;
+        align-content: center;
+        gap: 18px;
+        background-color: var(--box-background-color);
+        width: 325px;
+        height: 325px;
+        place-self: center;
+        border-radius: 25px;
+
+}
+
+.box {
+        width: 85px;
+        height: 85px;
+        background-color: var(--box-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        font-size: 50px;
+        font-weight: bolder;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: white;
+}
+
+.box:hover {
+        filter: brightness(0.92);
+}
+
+.image {
+        font-size: 50px;
+        font-weight: bolder;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: white;
+
+}
+
+.new-game,.new-game-popup {
+        width: 200px;
+        height: 60px;
+        border-radius: 25px;
+        place-self: start center;
+        color: white;
+        background-color: var(--player-score-color);
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.new-game:hover,.new-game-popup:hover {
+        filter: brightness(0.92);
+}
+.new-game-popup {
+        background-color: var(--box-background-color);
+        border: none;
+        align-self: center;
+}
+
+
+
+.main-title {
+        width: 40%;
+        height: min-content;
+        padding: 30px 15px;
+        background-color: var(--player-score-color);
+        justify-self: center;
+        text-align: center;
+        font-size: x-large;
+        border-radius: 25px;
+        font-weight: bold;
+        color: white;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin: 40px;
+}
+
+.game-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+}
+
+.player-marker {
+        height: 200px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: var(--player-score-color);
+        border-radius: 0px 25px 25px 25px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.player-name,.mark-text,.mark {
+        font-weight: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 25px;
+        color: white;
+
+}
+
+.mark {
+        font-size: 45px;
+}
+
+dialog {
+        width: 40%;
+        height: 40%;
+        border-radius: 25px;
+        border: solid 10px white;
+        background-color: var(--player-score-color);
+}
+
+.modal-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+}
+
+.player-indicator {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border: dashed 2px var(--box-background-color);
+        width: max-content;
+        padding: 15px 25px;
+        place-self: center;
+        border-radius: 20px;
+}
+
+.status {
+        font-size: 55px;
+        font-weight: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: white;
+
+}
